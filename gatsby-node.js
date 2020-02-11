@@ -11,7 +11,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /react-leaf-carousel/,
+            test: /react-slick/,
             use: loaders.null(),
           },
         ],

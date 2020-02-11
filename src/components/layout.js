@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import '../assets/css/base.css'
 import '../assets/css/vendor.css'
 import '../assets/css/main.css'
+import '../assets/css/index.css'
 
 import Header from './header'
 import Contacts from './contacts'

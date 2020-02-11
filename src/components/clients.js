@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Slider from 'react-slick'
-
 import logoNascer from '../assets/images/clientes/nascer.png'
 import logoCynthia from '../assets/images/clientes/cynthia_charone.png'
 import logo35 from '../assets/images/clientes/35+2.png'
@@ -13,17 +11,6 @@ import logoMaradei from '../assets/images/clientes/maradei.png'
 import logoNutrindo from '../assets/images/clientes/nutrindo.png'
 import logoRaposo from '../assets/images/clientes/raposo.png'
 import logoVirtuli from '../assets/images/clientes/virtuli.png'
-
-const settings = {
-  dots: false,
-  arrows: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  lazyLoad: true,
-  autoplay: true,
-}
 
 export default function clients() {
   return (
@@ -43,96 +30,87 @@ export default function clients() {
         className="row customer-logos slider"
         style={{ marginBottom: '-50px' }}
       >
-        <Slider {...settings}>
-          <div className="slide">
+        <div class="flex mb-4">
+          <div class="w-1/5">
             <img
               src={logoNascer}
               alt="Clinica de Reprodução Nascer"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
+          <div class="w-1/5">
             <img
               src={logoCynthia}
               alt="Hospital Cynthia Charone"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
+          <div class="w-1/5">
             <img
               src={logo35}
               alt="35+ Coaching de Bem-estar"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
+          <div class="w-1/5">
             <img
               src={logoMaradei}
               alt="Hospital Maradei"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
-            <img
-              src={logoArtmed}
-              alt="Art Med"
-              className="itemCliente"
-              width="50%"
-            />
+          <div class="w-1/5">
+            <img src={logoArtmed} alt="Art Med" className="itemCliente" />
           </div>
-          <div className="slide">
+        </div>
+
+        <div class="flex mb-4">
+          <div class="w-1/5">
             <img
               src={logoFrancisco}
               alt="Dr. Francisco Tostes"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
+          <div class="w-1/5">
             <img
               src={logoNutrindo}
               alt="Nutrindo ideais"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
+          <div class="w-1/5">
             <img
               src={logoErikaPerini}
               alt="Dr. Erika Perini"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
+          <div class="w-1/5">
             <img
               src={logoDrPedro}
               alt="Dr. Pedro Luiz"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
+          <div class="w-1/5">
             <img
               src={logoVirtuli}
               alt="Clínica Virtuli"
               className="itemCliente"
-              width="50%"
             />
           </div>
-          <div className="slide">
-            <img
-              src={logoRaposo}
-              alt="Raposo"
-              className="itemCliente"
-              width="50%"
-            />
+        </div>
+
+        <div class="flex mb-4">
+          <div class="w-1/5">
+            <img src={logoRaposo} alt="Raposo" className="itemCliente" />
           </div>
-        </Slider>
+          <div class="w-1/5"></div>
+          <div class="w-1/5"></div>
+          <div class="w-1/5"></div>
+          <div class="w-1/5"></div>
+        </div>
       </div>
     </section>
   )
