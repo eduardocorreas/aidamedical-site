@@ -5,6 +5,7 @@ import logoBS from '../assets/images/logo-business-school.png'
 import logoSMC from '../assets/images/logo-social-media-consulting.png'
 
 export default function holdings() {
+  
   return (
     <section
       id="services"

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import InfiniteCarousel from 'react-leaf-carousel'
+import Slider from 'react-slick'
 
 import logoNascer from '../assets/images/clientes/nascer.png'
 import logoCynthia from '../assets/images/clientes/cynthia_charone.png'
@@ -13,6 +13,17 @@ import logoMaradei from '../assets/images/clientes/maradei.png'
 import logoNutrindo from '../assets/images/clientes/nutrindo.png'
 import logoRaposo from '../assets/images/clientes/raposo.png'
 import logoVirtuli from '../assets/images/clientes/virtuli.png'
+
+const settings = {
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  lazyLoad: true,
+  autoplay: true,
+}
 
 export default function clients() {
   return (
@@ -32,35 +43,7 @@ export default function clients() {
         className="row customer-logos slider"
         style={{ marginBottom: '-50px' }}
       >
-        <InfiniteCarousel
-          breakpoints={[
-            {
-              breakpoint: 500,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              },
-            },
-          ]}
-          dots={false}
-          arrows={false}
-          showSides={true}
-          sidesOpacity={0.5}
-          sideSize={0.1}
-          slidesToScroll={1}
-          slidesToShow={6}
-          scrollOnDevice={true}
-          autoCycle={true}
-          animationDuration={300}
-          lazyLoad={true}
-        >
+        <Slider {...settings}>
           <div className="slide">
             <img
               src={logoNascer}
@@ -106,7 +89,7 @@ export default function clients() {
               src={logoFrancisco}
               alt="Dr. Francisco Tostes"
               className="itemCliente"
-              width="60%"
+              width="50%"
             />
           </div>
           <div className="slide">
@@ -114,7 +97,7 @@ export default function clients() {
               src={logoNutrindo}
               alt="Nutrindo ideais"
               className="itemCliente"
-              width="60%"
+              width="50%"
             />
           </div>
           <div className="slide">
@@ -122,7 +105,7 @@ export default function clients() {
               src={logoErikaPerini}
               alt="Dr. Erika Perini"
               className="itemCliente"
-              width="60%"
+              width="50%"
             />
           </div>
           <div className="slide">
@@ -130,7 +113,7 @@ export default function clients() {
               src={logoDrPedro}
               alt="Dr. Pedro Luiz"
               className="itemCliente"
-              width="60%"
+              width="50%"
             />
           </div>
           <div className="slide">
@@ -138,7 +121,7 @@ export default function clients() {
               src={logoVirtuli}
               alt="Clínica Virtuli"
               className="itemCliente"
-              width="60%"
+              width="50%"
             />
           </div>
           <div className="slide">
@@ -146,10 +129,10 @@ export default function clients() {
               src={logoRaposo}
               alt="Raposo"
               className="itemCliente"
-              width="60%"
+              width="50%"
             />
           </div>
-        </InfiniteCarousel>
+        </Slider>
       </div>
     </section>
   )
