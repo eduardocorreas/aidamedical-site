@@ -1,13 +1,17 @@
 import React from 'react'
 
-import homeBG from '../assets/images/business-school-bg.png'
+import homeBG from '../assets/images/business-school-bg.jpg'
 
 export default function HomeBS() {
   return (
     <section
       id="home"
       class="s-home target-section"
-      style={{ backgroundImage: `url(${homeBG})` }}
+      style={{
+        backgroundImage: `url(${homeBG})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '100%',
+      }}
     >
       <div class="shadow-overlay"></div>
 
