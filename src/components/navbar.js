@@ -17,14 +17,13 @@ export default function Navbar() {
   return (
     <>
       <nav className="header-nav" style={{ visibility: visible }}>
-        <a
+        <div
           onClick={() => changeVisibility()}
           className="header-nav__close"
           title="close"
-          href="/#"
         >
           <span>Fechar</span>
-        </a>
+        </div>
 
         <div
           className="header-nav__content"
@@ -111,13 +110,9 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <a
-        className="header-menu-toggle"
-        onClick={() => changeVisibility()}
-        href="/#"
-      >
+      <div className="header-menu-toggle" onClick={() => changeVisibility()}>
         <span className="header-menu-icon"></span>
-      </a>
+      </div>
     </>
   )
 }
