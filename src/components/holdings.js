@@ -56,14 +56,14 @@ export default function holdings() {
           data-aos="fade-up"
         >
           <div className="service-icon  service-icon--ui-design text-center">
-            <a href="{{ url('/business-school')}}">
+            <Link to="/business-school">
               <img
                 src={logoBS}
                 className="iconService"
                 alt="Icone Digital"
                 style={{ width: '85%' }}
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
