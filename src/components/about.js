@@ -37,7 +37,10 @@ export default function about() {
 
         <br />
         <br />
-        <div className="row services-list block-1-4 block-m-1-2 block-tab-full">
+        <div
+          className="row services-list block-1-4 block-m-1-2 block-tab-full"
+          style={{ marginBottom: 50 }}
+        >
           <div
             className="col-block service-item aos-init aos-animate divider-service-one"
             data-aos="fade-up"
