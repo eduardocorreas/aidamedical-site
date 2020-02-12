@@ -38,7 +38,7 @@ module.exports = {
         // Setting a color is optional.
         color: `#00A099`,
         // Disable the loading spinner.
-        showSpinner: false,
+        showSpinner: true,
       },
     },
     {
