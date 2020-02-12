@@ -24,7 +24,7 @@ module.exports = {
         short_name: `Medical`,
         start_url: `/`,
         background_color: `#00A099`,
-        theme_color: `00A099`,
+        theme_color: `#00A099`,
         display: `minimal-ui`,
         icon: `src/assets/images/icons/icon.png`, // This path is relative to the root of the site.
       },
