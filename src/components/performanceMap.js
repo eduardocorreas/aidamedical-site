@@ -14,7 +14,14 @@ export default function performanceMap() {
         </div>
       </div>
 
-      <p class="text-center" style={{ marginBottom: '-130px' }}>
+      <p
+        class="text-center"
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
         <img src={Map} alt="Mapa de atuação" />
       </p>
     </section>

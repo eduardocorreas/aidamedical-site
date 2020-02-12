@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="s-header">
       <div className="header-logo">
-        <a href="index.html">
+        <a href="/">
           <img src={logo} alt="Logo" />
         </a>
       </div>

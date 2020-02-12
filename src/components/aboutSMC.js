@@ -1,12 +1,11 @@
 import React from 'react'
 
-import iconMarketing from '../assets/images/icons/icon-marketing.png'
-import iconGestao from '../assets/images/icons/icon-gestao-empresarial.png'
-import iconSocialMedia from '../assets/images/icons/icon-social-media.png'
-import iconPlanejamento from '../assets/images/icons/icon-planejamento-estrategico.png'
-import iconComunicacao from '../assets/images/icons/icon-comunicacao-interna.png'
+import iconConference from '../assets/images/icons/icon-conference.png'
+import iconConsulting from '../assets/images/icons/icon-consulting.png'
+import iconProntuario from '../assets/images/icons/icon-prontuario.png'
+import iconAdvertising from '../assets/images/icons/icon-advertising.png'
 
-export default function aboutBCH() {
+export default function aboutSMC() {
   return (
     <section
       id="services"
@@ -23,16 +22,25 @@ export default function aboutBCH() {
 
       <div className="row">
         <p style={{ fontSize: '1.2em' }} className="text-center">
-          Estratégia de negócios é a nossa principal oferta. Em um primeiro
-          momento, realizamos uma avaliação interna para entender a história, as
-          ambições e as capacidades da sua empresa e, a partir disso,
-          conseguimos elaborar um planejamento estratégico de acordo com as suas
-          necessidades e do ambiente competitivo.
+          Esse protocolo foi criado especialmente para os profissionais da saúde
+          que desejam entrar nas redes sociais e{' '}
+          <strong>ainda não sabem por onde começar</strong>. Sabemos que muito
+          se fala de Marketing Digital, mas vamos falar como o Social Media
+          Consulting in Health pode ajudar você a se posicionar no mercado! Esse
+          produto nada mais é do que uma{' '}
+          <strong>
+            metodologia que guia a estratégia de marketing de conteúdo das suas
+            redes sociais
+          </strong>
+          .<br />
+          <br />
+          Apresentamos todas as ferramentas e melhores escolhas para quem deseja
+          ter sucesso nesse canal de comunicação.
         </p>
 
         <br />
         <br />
-        <div className="row services-list block-1-3 block-m-1-2 block-tab-full">
+        <div className="row services-list block-1-2 block-m-1-2 block-tab-full">
           <div className="col-block service-item">
             <div
               className="service-icon service-icon--brand-identity text-center"
@@ -42,13 +50,13 @@ export default function aboutBCH() {
                 alignItems: 'center',
               }}
             >
-              <img src={iconGestao} alt="Gestão Empresarial" />
+              <img src={iconConference} alt="Consultorias online Semanais" />
             </div>
             <p
               style={{ fontSize: '1.5em', fontWeight: 'bold' }}
               className="text-center"
             >
-              Gestão Empresarial
+              Consultorias online Semanais
             </p>
           </div>
 
@@ -61,13 +69,16 @@ export default function aboutBCH() {
                 alignItems: 'center',
               }}
             >
-              <img src={iconMarketing} alt="Marketing" />
+              <img
+                src={iconConsulting}
+                alt="Consultor exclusivo para pensar estrategicamente"
+              />
             </div>
             <p
               style={{ fontSize: '1.5em', fontWeight: 'bold' }}
               className="text-center"
             >
-              Marketing{' '}
+              Consultor exclusivo para pensar estrategicamente
             </p>
           </div>
 
@@ -80,35 +91,16 @@ export default function aboutBCH() {
                 alignItems: 'center',
               }}
             >
-              <img src={iconSocialMedia} alt="Social Media" />
+              <img src={iconProntuario} alt="Roteiro de execução mensal" />
             </div>
             <p
               style={{ fontSize: '1.5em', fontWeight: 'bold' }}
               className="text-center"
             >
-              Social Media
+              Roteiro de execução mensal
             </p>
           </div>
-        </div>
-        <div className="row services-list block-1-2 block-m-1-2">
-          <div className="col-block service-item">
-            <div
-              className="service-icon service-icon--ui-design text-center"
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              <img src={iconPlanejamento} alt="Social Media" />
-            </div>
-            <p
-              style={{ fontSize: '1.5em', fontWeight: 'bold' }}
-              className="text-center"
-            >
-              Planejamento Estratégico
-            </p>
-          </div>
+
           <div className="col-block service-item">
             <div
               className="service-icon  service-icon--ui-design text-center"
@@ -118,13 +110,13 @@ export default function aboutBCH() {
                 alignItems: 'center',
               }}
             >
-              <img src={iconComunicacao} alt="Comunicação interna" />
+              <img src={iconAdvertising} alt="4 Layouts/mês" />
             </div>
             <p
               style={{ fontSize: '1.5em', fontWeight: 'bold' }}
               className="text-center"
             >
-              Comunicação interna/externa
+              4 Layouts/mês
             </p>
           </div>
         </div>
