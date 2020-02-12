@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `aida-medical`,
-        short_name: `aidamedical`,
+        name: `Aida Medical`,
+        short_name: `Medical`,
         start_url: `/`,
         background_color: `#00A099`,
         theme_color: `00A099`,
